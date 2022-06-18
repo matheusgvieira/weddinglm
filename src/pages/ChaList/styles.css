@@ -1,0 +1,12 @@
+.list-page {
+  width: 98vw;
+  height: 100vh;
+}
+
+.list-page .list-page-header {
+  padding: 4px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
