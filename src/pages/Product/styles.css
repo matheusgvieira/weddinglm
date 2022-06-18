@@ -1,9 +1,9 @@
-.list-page {
+.list-page-product {
   width: 98vw;
   height: 100vh;
 }
 
-.list-page .list-page-header {
+.list-page-product .list-page-header {
   padding: 4px;
   background-color: white;
   display: flex;
@@ -13,4 +13,9 @@
 
 .list-title {
   text-align: center;
+}
+
+.list-page-product .content {
+  display: flex;
+  justify-content: center;
 }
