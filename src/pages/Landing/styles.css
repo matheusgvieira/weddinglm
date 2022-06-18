@@ -1,17 +1,31 @@
 .page-landing {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../assets/lm.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-landing-filer-background {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: black;
+  opacity: 0.75;
 }
 
-img {
-  max-width: 100px;
-  width: auto;
-  height: auto;
-}
 .page-landing .main-info h1 {
   font-size: 48px;
+}
+
+.page-landing h1,
+.page-landing h3,
+.page-landing h4,
+.page-landing p {
+  color: white;
 }
 
 .border-divider {
@@ -21,7 +35,7 @@ img {
 }
 
 .message {
-  margin-top: 16px;
+  margin: 16px 16px 0 16px;
   display: flex;
   text-align: center;
 }

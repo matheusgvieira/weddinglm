@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
-import { Button, Card, Divider, Input, message, Form } from "antd";
+import { Button, Card, Divider, Input, message, Form, Image } from "antd";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import api from "../../server/api";
 import { Item } from "../ChaList";
+import { LeftOutlined } from "@ant-design/icons";
+import ImageLoading from "../../assets/image_loading.png";
 
 const Product: React.FC = () => {
   const history = useNavigate();
@@ -58,7 +60,10 @@ const Product: React.FC = () => {
     <div className="list-page-product">
       <div className="list-page-header">
         <div className="people">
-          <Link to="/chalist">Voltar para lista</Link>
+          <Link to="/chalist">
+            <LeftOutlined />
+            Voltar para lista
+          </Link>
         </div>
         <div className="date-wedding">15 · 11 · 2022</div>
       </div>
@@ -69,6 +74,8 @@ const Product: React.FC = () => {
       <Divider />
       <div className="content">
         <Card title={item.name} style={{ width: 300 }} loading={loading}>
+          <Image width={200} src={item.url || ImageLoading} />
+          <Divider />
           <p>
             <strong>Descrição: </strong> {item.description}
           </p>

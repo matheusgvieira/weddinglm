@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./styles.css";
 import { Table, Button, Input, Divider } from "antd";
 import api from "../../server/api";
-import { AudioOutlined } from "@ant-design/icons";
+import { AudioOutlined, LeftOutlined } from "@ant-design/icons";
 import { useNavigate, Link } from "react-router-dom";
 
 const Search = Input.Search;
@@ -90,7 +90,10 @@ const ChaList: React.FC = () => {
     <div className="list-page">
       <div className="list-page-header">
         <div className="people">
-          <Link to="/">Larissa & Matheus</Link>
+          <Link to="/">
+            {" "}
+            <LeftOutlined /> Larissa & Matheus
+          </Link>
         </div>
         <div className="date-wedding">15 · 11 · 2022</div>
       </div>
