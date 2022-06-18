@@ -11,6 +11,8 @@ const Routes: React.FC = () => {
         <Route index element={<Landing />} />
         <Route path="/chalist" element={<ChaList />} />
         <Route path="/product/:id" element={<Product />} />
+
+        <Route path="/*" element={<Product />} />
       </RoutesDom>
     </BrowserRouter>
   );

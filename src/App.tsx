@@ -1,7 +1,7 @@
 import React from "react";
 import "./assets/styles/global.css";
-import "antd/dist/antd.css";
 import Routes from "./routes";
+import "./App.css";
 
 function App() {
   return <Routes />;
